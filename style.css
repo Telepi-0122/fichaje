@@ -970,3 +970,64 @@ input[type="date"], input[type="week"] {
 .info-exportar li {
     margin-bottom: 5px;
 }
+/* Nuevos estilos para botón volver - fuente blanca y fondo rojo */
+.volver-btn {
+    margin-top: 20px;
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border: 2px solid white !important;
+}
+
+.volver-btn:hover {
+    background-color: var(--dark-red) !important;
+    border-color: white !important;
+}
+
+.volver-btn i {
+    color: white !important;
+}
+
+/* Estilos para input de DNI más grande */
+.dni-input-large {
+    padding: 25px 20px !important;
+    font-size: 2.2rem !important;
+    text-align: center !important;
+    letter-spacing: 3px !important;
+    height: auto !important;
+    min-height: 80px !important;
+    border-radius: 12px !important;
+    border: 3px solid var(--secondary-color) !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    color: var(--dark-color) !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+.dni-input-medium {
+    padding: 15px 12px !important;
+    font-size: 1.4rem !important;
+    text-align: center !important;
+    letter-spacing: 2px !important;
+    height: auto !important;
+    min-height: 60px !important;
+}
+
+/* Ajuste para el logo */
+.logo img {
+    max-width: 180px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Ajustes responsivos para el input grande de DNI */
+@media (max-width: 768px) {
+    .dni-input-large {
+        padding: 20px 15px !important;
+        font-size: 1.8rem !important;
+        min-height: 70px !important;
+    }
+    
+    .logo img {
+        max-width: 140px;
+    }
+}
