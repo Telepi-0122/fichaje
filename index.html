@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Telepizza - Gestión de Jornadas</title>
-    <!-- Añadido favicon/logo de acceso directo -->
-    <link rel="icon" href="https://raw.githubusercontent.com/Telepi-0122/fichaje/main/Images/telepizza_logo.png" type="image/png">
+    <!-- Añadido favicon/logo de acceso directo con URL CORRECTA -->
+    <link rel="icon" href="https://raw.githubusercontent.com/Telepi-0122/fichaje/main/images/telepizza_logo.png" type="image/png">
+    <!-- Para mejor compatibilidad, añadir múltiples formatos -->
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Telepi-0122/fichaje/main/images/telepizza_logo.png">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Telepi-0122/fichaje/main/images/telepizza_logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- Logo con imagen real -->
+        <!-- Logo con imagen real con URL CORRECTA -->
         <div class="logo">
-            <img src="https://raw.githubusercontent.com/Telepi-0122/fichaje/main/Images/telepizza_logo.png" alt="Telepizza Logo" style="max-width: 150px; margin-bottom: 10px;">
+            <!-- Si la imagen no carga, mostramos texto alternativo -->
+            <img src="https://raw.githubusercontent.com/Telepi-0122/fichaje/main/images/telepizza_logo.png" 
+                 alt="Telepizza Logo" 
+                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"150\" height=\"150\"><rect width=\"100%\" height=\"100%\" fill=\"%23D4001C\"/><text x=\"50%\" y=\"50%\" font-family=\"Montserrat, sans-serif\" font-size=\"16\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">TELEPIZZA</text></svg>';"
+                 style="max-width: 180px; margin-bottom: 15px; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));">
             <span>Gestión de Jornadas</span>
         </div>
         
