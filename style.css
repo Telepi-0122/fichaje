@@ -1031,46 +1031,48 @@ input[type="date"], input[type="week"] {
         max-width: 140px;
     }
 }
-/* Añade al final del archivo style.css */
 
-/* Mejoras para el logo */
-.logo img {
+/* Estilos para el logo - CENTRADO Y SIN DIFUMINADO */
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-imagen {
     max-width: 180px;
+    width: 100%;
     height: auto;
     margin-bottom: 15px;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    display: block;
     border-radius: 8px;
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     padding: 10px;
     border: 2px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    filter: none !important; /* Elimina cualquier filtro que cause difuminado */
 }
 
-.logo img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-    border-color: var(--secondary-color);
-}
-
-/* Si la imagen no carga, mostrar un placeholder */
-.logo img:not([src]),
-.logo img[src=""],
-.logo img[src*="undefined"] {
-    display: none;
-}
-
-.logo h1 {
-    color: white !important;
-    -webkit-text-fill-color: white;
-    background: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: clamp(2rem, 5vw, 2.8rem);
-    margin-bottom: 10px;
+.logo span {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 800;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
-    .logo img {
+    .logo-imagen {
         max-width: 140px;
         padding: 8px;
     }
