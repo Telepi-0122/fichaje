@@ -1031,3 +1031,47 @@ input[type="date"], input[type="week"] {
         max-width: 140px;
     }
 }
+/* Añade al final del archivo style.css */
+
+/* Mejoras para el logo */
+.logo img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border-color: var(--secondary-color);
+}
+
+/* Si la imagen no carga, mostrar un placeholder */
+.logo img:not([src]),
+.logo img[src=""],
+.logo img[src*="undefined"] {
+    display: none;
+}
+
+.logo h1 {
+    color: white !important;
+    -webkit-text-fill-color: white;
+    background: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    margin-bottom: 10px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 140px;
+        padding: 8px;
+    }
+}
