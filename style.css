@@ -147,7 +147,7 @@ h1, h2, h3, h4 {
 /* Botón de fichar estilo "hoja de orégano" */
 .btn-fichar {
     background-color: var(--color-boton-fichar, #4CAF50) !important;
-    color: white !important;
+    color: red !important;
     font-size: 1.4rem !important;
     padding: 25px 40px !important;
     border-radius: 15px !important;
